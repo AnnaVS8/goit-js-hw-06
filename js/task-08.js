@@ -16,6 +16,5 @@ function onFormSubmit(event) {
     login,
     password,
   };
-  login || password !== "" ? console.log(formData) : alert("Відсутні дані");
-  event.currentTarget.reset();
-}
+  login === "" || password === "" ? alert("Відсутні дані") : console.log(formData), event.currentTarget.reset();
+  }
